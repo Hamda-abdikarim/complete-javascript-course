@@ -238,7 +238,7 @@ console.log(hamda.firstName + ' has ' + hamda.friends.length + ' friends' + ',' 
     
 console.log(`${hamda.firstName} has ${hamda.friends.length} friends, and her best friend is called ${hamda.friends[0]}`);
 
-*/ // Object Method //
+// Object Method //
 
 const hamda = {
     firstName: 'Hamdi',
@@ -322,3 +322,27 @@ console.log(mike.bmi);
     console.log(`${mike.fullName}'s BMI (${mike.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
  
  }
+*/ 
+
+ // For loop running while the condition is true //
+
+ for(let rep = 1; rep <= 10; rep++){
+
+    console.log(`Lifting weights repitition ${rep} 🏋🏾‍♀️`);
+ }
+
+ 
+const hamda = [
+    'Hamdi',
+   'Hussein',
+   2025 - 2000,
+   'Developer',
+  ['Aisha', 'Mohamed', 'Na'],
+  true,
+  false,
+
+];
+
+for(let i = 0; i < hamda.length; i++){
+    console.log(hamda[i]);
+}
