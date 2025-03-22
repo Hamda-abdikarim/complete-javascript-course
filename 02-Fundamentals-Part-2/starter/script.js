@@ -346,3 +346,42 @@ const hamda = [
 for(let i = 0; i < hamda.length; i++){
     console.log(hamda[i]);
 }
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for(let i = 0; i < years.length; i++){
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+//continue and break //
+
+console.log('----- ONLY STRINGS ----');
+for (let i = 0; i < hamda.length; i++){
+    if(typeof hamda[i] !== 'string') continue;
+
+    console.log(hamda[i], typeof hamda[i]);
+}
+
+console.log('---- BREAK WITH NUMBER ----')
+for (let i = 0; i < hamda.length; i++){
+    if(typeof hamda[i] === 'number') break;
+
+    console.log(hamda[i], typeof hamda[i]);
+}
+
+// Looping backwards and loopin in loop //
+
+for(let i = hamda.length-1; i>=0; i--){
+    console.log(i, hamda[i]);
+}
+
+for (let exercise =1; exercise < 4; exercise++){
+    console.log(`------ Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++){
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}🏋🏾‍♀️`);
+    }
+}
